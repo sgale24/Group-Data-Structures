@@ -1,0 +1,24 @@
+C:\Users\ShaylaGale\Documents\GitHub\IS403-DataStucturesGroup\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe.config
+C:\Users\ShaylaGale\Documents\GitHub\IS403-DataStucturesGroup\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe
+C:\Users\ShaylaGale\Documents\GitHub\IS403-DataStucturesGroup\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.pdb
+C:\Users\ShaylaGale\Documents\GitHub\IS403-DataStucturesGroup\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.csprojResolveAssemblyReference.cache
+C:\Users\ShaylaGale\Documents\GitHub\IS403-DataStucturesGroup\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.exe
+C:\Users\ShaylaGale\Documents\GitHub\IS403-DataStucturesGroup\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.pdb
+C:\Users\Shayla\Documents\GitHub\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe.config
+C:\Users\Shayla\Documents\GitHub\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.exe
+C:\Users\Shayla\Documents\GitHub\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.pdb
+<<<<<<< HEAD
+C:\Users\Madeleine Dame\Documents\GitHub\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe.config
+C:\Users\Madeleine Dame\Documents\GitHub\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.exe
+C:\Users\Madeleine Dame\Documents\GitHub\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.pdb
+C:\Users\Madeleine Dame\Documents\GitHub\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe
+C:\Users\Madeleine Dame\Documents\GitHub\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.pdb
+C:\Users\Madeleine Dame\Documents\GitHub\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Shayla\Documents\GitHub\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe
+C:\Users\Shayla\Documents\GitHub\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.pdb
+C:\Users\Shayla\Documents\GitHub\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.csprojResolveAssemblyReference.cache
+>>>>>>> origin/master
+\\Mac\Home\Desktop\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe.config
+\\Mac\Home\Desktop\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.exe
+\\Mac\Home\Desktop\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.pdb
