@@ -354,7 +354,6 @@ static void qDelete(Queue<string> s, string item)
         static void dictionaryMenu(Dictionary<string, int> userDictionary)
         {
             string userInput;
-            string key;
             string userSearch;
             int dictionaryCount = 1;
             bool menu = true;
@@ -415,6 +414,7 @@ static void qDelete(Queue<string> s, string item)
                 else if (userInput == "5")// CLEAR DICTIONARY
                 {
                     userDictionary.Clear();
+                    dictionaryCount = 1;
                     Console.WriteLine("\nThe Dictionary was cleared. Press ENTER to continue.");
                     Console.Read();
                 }
@@ -450,6 +450,103 @@ static void qDelete(Queue<string> s, string item)
             }
         }
 
+        //HashSet
+        static void HashSetMenu(HashSet<string> userHashSet)
+        {
+            string userInput;
+            string userSearch;
+            bool menu = true;
+            //            HashSet<string, int> userHashSet = new HashSet<string, int>();
+            HashSet<string> holderHashSet = new HashSet<string>();
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            while (menu)
+            {
+                //MENU
+                Console.Clear();
+                Console.WriteLine("1. Add one time to HashSet\n2. Add Huge List of Items to HashSet\n3. Display HashSet\n4. Delete from HashSet\n5. Clear HashSet\n6. Search HashSet\n7. Return to Main Menu\n");
+                userInput = Console.ReadLine();
+               
+                if (userInput == "1") // ADD ONE TIME TO HashSet
+                {
+                    Console.WriteLine("\nWhat would you like to add to the HashSet?");
+                    userHashSet.Add(Console.ReadLine());
+                    Console.WriteLine("\nEntry was successfully added to the HashSet.  Press ENTER to continue.");
+                    Console.Read();
+                }
+                else if (userInput == "2") // ADD HUGE LIST OF ITEMS TO HashSet
+                {
+                    userHashSet.Clear();
+                    for (int iCount = 1; iCount < 2001; iCount++)
+                    {
+                        userHashSet.Add("New Entry " + iCount);
+
+                    }
+                    Console.WriteLine("Entries Completed.  Press ENTER to continue");
+                    Console.Read();
+                }
+                else if (userInput == "3") // DISPLAY HashSet
+                {
+                    Console.WriteLine();
+                    foreach (string kvp in userHashSet)
+                    {
+                        Console.WriteLine(kvp);
+                    }
+                    Console.WriteLine("Press ENTER to continue.");
+                    Console.Read();
+                }
+                else if (userInput == "4")//DELETE FROM HashSet
+                {
+                    Console.WriteLine("\nWhat would you like to delete?");
+                    string userDelete = Console.ReadLine();
+                    if (userHashSet.Contains(userDelete) == true)
+                    {
+                        userHashSet.Remove(userDelete);
+                        Console.WriteLine("\n" + userDelete + " was successfully deleted! Press ENTER to continue.");
+                        Console.Read();
+                    }
+                    else
+                    {
+                        Console.WriteLine(userDelete + "does not exist.  Press ENTER to continue.");
+                        Console.Read();
+                    }
+                }
+                else if (userInput == "5")// CLEAR HashSet
+                {
+                    userHashSet.Clear();
+                    Console.WriteLine("\nThe HashSet was cleared. Press ENTER to continue.");
+                    Console.Read();
+                }
+                else if (userInput == "6")// SEARCH HashSet
+                {
+                    Console.WriteLine("\nWhat would you like to search for?");
+                    userSearch = Console.ReadLine();
+                    sw.Start(); //START STOP WATCH
+                    bool search = userHashSet.Contains(userSearch);
+                    sw.Stop();
+                    if (search == true)
+                    {
+                        Console.WriteLine("\nThe HashSet contains " + userSearch + ".\nThe search took " + sw.Elapsed + ".");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.Read();
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nThe HashSet does not contain this value.");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.Read();
+
+                    }
+                }
+                else if (userInput == "7")//RETURN TO MAIN MENU
+                {
+                    menu = false;
+                }
+                else//OUTPUT ERROR IF THERE IS NOT A NUMBER ENTERED BETWEEN 1-7
+                {
+                    Console.WriteLine("\nPlease enter a valid menu number.");
+                }
+            }
+        }
 
  
 
@@ -460,12 +557,12 @@ static void qDelete(Queue<string> s, string item)
             //Outermost while loop to return to main menu
             bool menu = true ;
             int userInput;
-            int userInput2;
 
             //Initialize data types before the while loop so they can be adjusted within other methods
             Stack<string> stack = new Stack<string>();
             Queue<string> queue = new Queue<string>();
             Dictionary<string, int> dict = new Dictionary<string, int>();
+            HashSet<string> hash = new HashSet<string>();
 
 
             while (menu)
@@ -474,7 +571,8 @@ static void qDelete(Queue<string> s, string item)
                 Console.WriteLine("1. Stack");
                 Console.WriteLine("2. Queue");
                 Console.WriteLine("3. Dictionary");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Hashset");
+                Console.WriteLine("5. Exit");
 
                 userInput = Convert.ToInt32(Console.ReadLine());
 
@@ -500,8 +598,20 @@ static void qDelete(Queue<string> s, string item)
 
                 if (userInput == 4)
                 {
+                    HashSetMenu(hash);
+                    //dictMenu
+
+                }
+
+                if (userInput == 5)
+                {
                     Console.WriteLine("Goodbye");
                     menu = false;
+                }
+
+                else//OUTPUT ERROR IF THERE IS NOT A NUMBER ENTERED BETWEEN 1-5
+                {
+                    Console.WriteLine("\nPlease enter a valid menu number.");
                 }
 
             }

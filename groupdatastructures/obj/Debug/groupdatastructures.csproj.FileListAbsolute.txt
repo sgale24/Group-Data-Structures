@@ -22,3 +22,9 @@ C:\Users\Shayla\Documents\GitHub\groupdatastructures\groupdatastructures\obj\Deb
 \\Mac\Home\Desktop\groupdatastructures\groupdatastructures\bin\Debug\groupdatastructures.exe.config
 \\Mac\Home\Desktop\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.exe
 \\Mac\Home\Desktop\groupdatastructures\groupdatastructures\obj\Debug\groupdatastructures.pdb
+C:\Users\ShaylaGale\Documents\GitHub\Group-Data-Structures\groupdatastructures\bin\Debug\groupdatastructures.exe.config
+C:\Users\ShaylaGale\Documents\GitHub\Group-Data-Structures\groupdatastructures\obj\Debug\groupdatastructures.exe
+C:\Users\ShaylaGale\Documents\GitHub\Group-Data-Structures\groupdatastructures\obj\Debug\groupdatastructures.pdb
+C:\Users\ShaylaGale\Documents\GitHub\Group-Data-Structures\groupdatastructures\bin\Debug\groupdatastructures.exe
+C:\Users\ShaylaGale\Documents\GitHub\Group-Data-Structures\groupdatastructures\bin\Debug\groupdatastructures.pdb
+C:\Users\ShaylaGale\Documents\GitHub\Group-Data-Structures\groupdatastructures\obj\Debug\groupdatastructures.csprojResolveAssemblyReference.cache
